@@ -3,9 +3,9 @@
 // ans:
 
 
-const setTime = setTimeout(() => {
-    console.log("hello!");
-    },5000);
+// const setTime = setTimeout(() => {
+//     console.log("hello!");
+//     },5000);
 
 // 1b) Write a function called delayedGreeting() that takes two parameters, name and delay time, and logs a greeting message after the given delay time.
 
@@ -14,3 +14,10 @@ const setTime = setTimeout(() => {
 
 // Output:
 // Hello, Alice!
+// ans:
+function delayedGreeting(name , delayTime) {
+    setTimeout(()=>{
+console.log("Hello," + name + "!");
+    },delayTime)
+}
+delayedGreeting("Alice", 2000)
